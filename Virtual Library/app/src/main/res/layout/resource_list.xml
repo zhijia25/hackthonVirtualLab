@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/resource">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="@color/colorPrimary"
+        />
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="Resource List"-->
+<!--        android:textSize="22sp"-->
+<!--        android:id="@+id/resource_label"-->
+<!--        android:visibility="invisible">-->
+
+<!--    </com.google.android.material.textview.MaterialTextView>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        android:text="Resource List"
+        android:id="@+id/resource_label"></TextView>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resource_list"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+    </ListView>
+</LinearLayout>
